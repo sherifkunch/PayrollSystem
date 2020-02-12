@@ -32,6 +32,7 @@ namespace PayrollSystem
                 Console.WriteLine(currentEmployee);
                 if (currentEmployee is BasePlusCommissionEmployee)
                 {
+                    //downcast Employee reference to BasePlusCommissionEmployee reference
                     BasePlusCommissionEmployee employee = (BasePlusCommissionEmployee)currentEmployee;
                     employee.BaseSalary *= 1.10M;
                     Console.WriteLine("new base salary with 10% increase is: {0:C}", employee.BaseSalary);
